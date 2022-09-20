@@ -2,6 +2,7 @@
 import './App.css';
 import NavBar from './components/navbar';
 import Cards from './components/cards';
+import ItemListContainer from './components/shop/itemListContainer';
 
 
 
@@ -17,6 +18,8 @@ function App() {
       <div>
             <NavBar/>
             <Cards/>
+            <ItemListContainer  greeting='hola'/>
+            
       </div>
      
       
