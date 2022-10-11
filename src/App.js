@@ -1,8 +1,11 @@
 
 import './App.css';
 import NavBar from './components/navbar';
-import Cards from './components/cards';
-import ItemListContainer from './components/shop/itemListContainer';
+import ItemList from './components/shop/ItemList';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+
+
+
 
 
 
@@ -15,18 +18,18 @@ function App() {
       <>
 
       
-      <div>
-            <NavBar/>
-            <Cards/>
-            <ItemListContainer  greeting='hola'/>
-            
-      </div>
-     
-      
-     
       
 
-      
+        <BrowserRouter>
+            <NavBar/>
+            <Routes>
+              <Route  path={'/shop'} element={<ItemList/>} />
+            </Routes>
+
+
+        </BrowserRouter>
+            
+          
       </>
 
     

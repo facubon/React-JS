@@ -1,14 +1,23 @@
 //Bara de Navegacion//
 
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
 
         <div className="justify-center navbar bg-base-100">
 
+        
+
         <div className="flex text-lg pr-96">
             <h1 className="titulo">BurgerBon </h1>
         </div>
+
+        <div className="flex text-lg pr-96">
+            <Link to='/shop' className="titulo">Menu</Link> 
+        </div>
+
+    
 
     <div className="flex-none">
 
