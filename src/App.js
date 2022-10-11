@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavBar from './components/navbar';
-import ItemList from './components/shop/ItemList';
+import ItemListContainer from './components/shop/ItemListContainer';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
@@ -23,7 +23,7 @@ function App() {
         <BrowserRouter>
             <NavBar/>
             <Routes>
-              <Route  path={'/shop'} element={<ItemList/>} />
+              <Route  path={'/shop'} element={<ItemListContainer/>} />
             </Routes>
 
 

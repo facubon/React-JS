@@ -2,7 +2,7 @@
 import React, {useEffect} from 'react'
 import { products } from './products'
 
-const ItemList = () => {
+const ItemListContainer = () => {
 
 
     useEffect(() => {
@@ -30,4 +30,4 @@ const ItemList = () => {
 }
 
 
-export default ItemList
+export default ItemListContainer
