@@ -10,7 +10,7 @@ const NavBar = () => {
         
 
         <div className="flex text-lg pr-96">
-            <h1 className="titulo">BurgerBon </h1>
+            <Link to='/'  className="titulo">Bon SkateShop </Link>
         </div>
 
         <div className="flex text-lg pr-96">

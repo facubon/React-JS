@@ -1,13 +1,17 @@
 
-import React, {useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import { products } from './products'
+import ItemDetailContainer from './ItemDetailContainer'
 
 const ItemListContainer = () => {
+
+    const [items,setItems] = useState([])
 
 
     useEffect(() => {
         getProducts().then ( response => {
             console.log(response);
+            setItems (response)
         })
 
     }, [])
@@ -18,16 +22,22 @@ const ItemListContainer = () => {
             setTimeout (()=>{
 
                 resolve (products)
-            },3000);
+            },1000);
         })
     }
     
 
   return (
-    <div>ItemListContainer</div>
+    <>
+     <div className='text-center'>Estos son los Cuatro productos de la pagina tardando 1 segundo </div>
+     {items.map ( i => <ItemDetailContainer key={i.id} {...i} /> )}
+    </>
+   
   )
 
 }
+
+
 
 
 export default ItemListContainer
