@@ -1,10 +1,13 @@
 //Bara de Navegacion//
 
+
 import { Link } from "react-router-dom"
 
-const NavBar = () => {
-    return (
 
+const NavBar = () => {
+
+
+    return (
         <div className="justify-center navbar bg-base-100">
 
         
@@ -17,7 +20,7 @@ const NavBar = () => {
             <Link to='/shop' className="titulo">Menu</Link> 
         </div>
 
-    
+
 
     <div className="flex-none">
 
@@ -47,17 +50,12 @@ const NavBar = () => {
     <div className="dropdown dropdown-end">
 
 
+    
+
+
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
 
 
     )}

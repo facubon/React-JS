@@ -3,9 +3,58 @@
 @tailwind utilities;
 
 
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  
+  
+  
+  
+
+}
 .titulo{
   color: orange;
+  font-size: 30px;
+}
+
+.boton{
+  background-color: black;
+  
+}
+
+.boton1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 
+#light{
+  background-color: #f3ebf6;
+}
+
+#dark{
+  background-color: #0002;
+}
+
+
+footer{
+  background-color: grey;
+  bottom:0; 
+  left:0; 
+  position: absolute;
+  
+}
+
+h1{
+  color:grey;
+  font-size:26px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
 
