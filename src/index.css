@@ -58,3 +58,14 @@ h1{
 
 }
 
+.imagenDetail{
+  height: 200px;
+  justify-content: center;
+  
+}
+
+.imagenDiv{
+  justify-content: center;
+  display: flex;
+}
+

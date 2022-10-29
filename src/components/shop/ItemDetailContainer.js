@@ -6,7 +6,7 @@ const ItemDetailContainer = ({id,nombre,precio}) => {
 
     <Link to={`/shop/item/${id}`}>
     <div className='p-5 text-center'>  
-        <div>ID del producto: {id}</div>
+        <div>ID del prodsdsdsucto: {id}</div>
         <div>Nombre del producto: {nombre}</div>
         <div>Precio: {precio}$</div>
     </div>
